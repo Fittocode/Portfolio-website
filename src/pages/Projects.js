@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from 'styled-components'
 // Animations
 import { motion } from 'framer-motion'
-import { pageAnimation, slider } from '../animation'
+import { pageAnimation } from '../animation'
 import { images } from "../images";
 
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
@@ -72,14 +72,14 @@ const StyledWork = styled(motion.div)`
     }
 `;
 
-const Frame1 = styled(motion.div)`
-    position: fixed;
-    left: 0;
-    top: 0%;
-    width: 100%;
-    height: 100vh;
-    background: #00fdd7;
-    z-index: 2;
-`
+// const Frame1 = styled(motion.div)`
+//     position: fixed;
+//     left: 0;
+//     top: 0%;
+//     width: 100%;
+//     height: 100vh;
+//     background: #00fdd7;
+//     z-index: 2;
+// `
 
 export default Projects
