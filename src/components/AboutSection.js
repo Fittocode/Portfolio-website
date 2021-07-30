@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 // Styled
 import { StyledAbout, StyledDescription, StyledImage, StyledHide, StyledBox, StyledBrandIcon, StyledBrandIcon2 } from '../styles'
+import '../'
 
 // Framer Motion
 import { motion } from 'framer-motion'
 import { pageAnimation } from '../animation'
+import { Link } from 'react-router-dom'
 // import { photoAnim } from '../animation'
 
 
@@ -43,9 +45,10 @@ const AboutSection = () => {
                     </div>
                     <motion.p variants={titleAnim}>This Portfolio was built with <span style={{ color: 'rgb(1, 225, 255)' }}>React</span></motion.p>
                     <StyledBox>
-                        <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim} style={{ marginRight: '.5rem' }}>Projects</motion.button>
-                        <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim}>
+                        <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim} style={{ marginRight: '.5rem' }}><Link to={'/projects'}>Projects</Link></motion.button>
+                        <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim}><Link to={'/contact'}>
                             Contact me
+                        </Link>
                         </motion.button>
                         <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://github.com/Fittocode" className="brand-icon">
                             <StyledBrandIcon variants={titleAnim}>
@@ -66,7 +69,6 @@ const AboutSection = () => {
         </motion.div>
     )
 }
-
 
 
 export default AboutSection

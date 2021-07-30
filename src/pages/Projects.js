@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import { pageAnimation } from '../animation'
 import { images } from "../images";
 
-const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
+const transition = { duration: 0.2, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const thumbnailVariants = {
     initial: { scale: 0.9, opacity: 0, size: 1 },

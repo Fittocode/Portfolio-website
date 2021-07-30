@@ -148,3 +148,8 @@ nav {
     }
   }
   
+.link-style {
+    color: 'inherit';
+    text-decoration: 'none'; 
+}
+

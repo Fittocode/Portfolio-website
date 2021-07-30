@@ -38,6 +38,10 @@ const GlobalStyle = createGlobalStyle`
             background-color: #00fdd7;
             color: black;
         }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
     }
     h2 {
         font-weight: lighter;
