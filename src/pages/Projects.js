@@ -8,13 +8,18 @@ import { images } from "../images";
 
 const transition = { duration: 0.2, ease: [0.43, 0.13, 0.23, 0.96] };
 
+const titleAnim = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { duration: 1 } }
+}
+
 const thumbnailVariants = {
     initial: { scale: 0.9, opacity: 0, size: 1 },
     enter: { scale: 1, opacity: 1, transition },
 };
 
 const frameVariants = {
-    hover: { scale: 1.05 }
+    hover: { scale: 1.01 }
 };
 
 const imageVariants = {
@@ -29,14 +34,16 @@ const Thumbnail = ({ id, i }) => (
             variants={frameVariants}
             transition={transition}
         >
-            <Link to={`/image/${i}`}>
+            {/* <Link to={`/image/${i}`}>
                 <motion.img
                     src={`${id}`}
                     alt="music-player"
                     variants={imageVariants}
                     transition={transition}
                 />
-            </Link>
+            </Link> */}
+            <StyledProjectTitle variants={titleAnim}>A music player application, built with <span style={{ color: 'rgb(1, 225, 255)' }}>React</span> and styled with Styled Components</StyledProjectTitle>
+            <iframe style={{ height: '800px', width: "1200px", background: 'white' }} src="https://gallant-heyrovsky-e92bf2.netlify.app/"></iframe>
         </motion.div>
     </motion.div>
 );
@@ -66,11 +73,16 @@ const StyledWork = styled(motion.div)`
     min-height: 100vh;
     color: white;
     overflow: hidden;
-    padding: 5rem 10rem;
+    padding: 2rem 10rem;
     h2 {
         padding: 1rem 0rem;
     }
 `;
+
+const StyledProjectTitle = styled(motion.p)`
+    padding: 0rem 0rem 1rem;
+    color: white;
+`
 
 // const Frame1 = styled(motion.div)`
 //     position: fixed;
