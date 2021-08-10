@@ -34,23 +34,15 @@ const Thumbnail = ({ id, i }) => (
             variants={frameVariants}
             transition={transition}
         >
-            {/* <Link to={`/image/${i}`}>
-                <motion.img
-                    src={`${id}`}
-                    alt="music-player"
-                    variants={imageVariants}
-                    transition={transition}
-                />
-            </Link> */}
-            <StyledProjectTitle variants={titleAnim}>A music player application, built with <span style={{ color: 'rgb(1, 225, 255)' }}>React</span> and styled with Styled Components</StyledProjectTitle>
-            <iframe style={{ height: '800px', width: "1200px", background: 'white' }} src="https://gallant-heyrovsky-e92bf2.netlify.app/"></iframe>
+            <motion.p className="projects-title" variants={titleAnim}>A music player application, built with <span style={{ color: 'rgb(1, 225, 255)' }}>React</span> and styled with Sass</motion.p>
+            <iframe className="iframe" style={{ background: 'white' }} src="https://gallant-heyrovsky-e92bf2.netlify.app/"></iframe>
         </motion.div>
     </motion.div>
 );
 
 export const Projects = () => {
     return (
-        <StyledWork exit="exit" variants={pageAnimation} initial='hidden' animate="enter">
+        <motion.div className="projects-layout" exit="exit" variants={pageAnimation} initial='hidden' animate="enter">
             <h1>Projects</h1>
             <div className="gallery">
                 <motion.div
@@ -65,33 +57,8 @@ export const Projects = () => {
                     ))}
                 </motion.div>
             </div>
-        </StyledWork >
+        </motion.div >
     )
 }
-
-const StyledWork = styled(motion.div)`
-    min-height: 100vh;
-    color: white;
-    overflow: hidden;
-    padding: 2rem 10rem;
-    h2 {
-        padding: 1rem 0rem;
-    }
-`;
-
-const StyledProjectTitle = styled(motion.p)`
-    padding: 0rem 0rem 1rem;
-    color: white;
-`
-
-// const Frame1 = styled(motion.div)`
-//     position: fixed;
-//     left: 0;
-//     top: 0%;
-//     width: 100%;
-//     height: 100vh;
-//     background: #00fdd7;
-//     z-index: 2;
-// `
 
 export default Projects

@@ -1,0 +1,55 @@
+.projects-layout {
+    min-height: 100vh;
+    color: white;
+    overflow: hidden;
+    padding: 2rem 10rem;
+    h1 {
+        padding: 0rem 2rem;
+    }
+}
+
+.projects-title {
+    padding: 0rem 0rem 1rem;
+    color: white;
+}
+
+.iframe {
+    height: 800px;
+    width: 1400px;
+}
+
+@media screen and (max-width: 1600px) {
+    .iframe {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .iframe {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .projects-layout {
+        padding: 2rem 5rem;
+    }
+    .iframe {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .projects-layout {
+        padding: 7rem 1rem;
+    }
+    .iframe {
+        height: 600px;
+    }
+}
