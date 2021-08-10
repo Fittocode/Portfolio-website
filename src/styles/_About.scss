@@ -47,7 +47,7 @@
 .brand-icon {
     display: flex;
     align-items: center;
-    margin-left: .4rem;
+    margin-left: .2rem;
     transition: all 0.2s ease;
     color: white;
     &:hover{
@@ -56,14 +56,14 @@
     }
 }
 
-  @media screen and (max-width: 867px) {
+  @media screen and (max-width: 950px) {
     .about-layout{
       flex-direction: column-reverse;
       justify-content: center;
-      padding: 1rem 1rem 1rem 1rem;
+      padding: 1rem 1.5rem 1rem 1.5rem;
     }
     .about-image {
-        width: 100%;
+        width: 80%;
         img {
             width: 60%;
         }
@@ -78,5 +78,13 @@
     }
     .buttons {
         justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .about-image {
+        img {
+            width: 80%;
+        }
     }
   }
