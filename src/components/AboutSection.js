@@ -3,8 +3,8 @@ import Matt2 from '../img/IMG_0940.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 // Styled
-import { StyledAbout, StyledDescription, StyledImage, StyledHide, StyledBox, StyledBrandIcon, StyledBrandIcon2 } from '../styles'
-import '../'
+import { StyledAbout, StyledDescription, StyledImage, StyledHide, StyledBox, StyledBrandIcon, StyledBrandIcon2, StyledIcons } from '../styles'
+
 
 // Framer Motion
 import { motion } from 'framer-motion'
@@ -31,41 +31,43 @@ const AboutSection = () => {
 
     return (
         <motion.div exit="exit" variants={pageAnimation} initial='hidden' animate="enter">
-            <StyledAbout variants={container} initial="hidden" animate="show">
-                <StyledDescription>
+            <motion.div className="about-layout" variants={container} initial="hidden" animate="show">
+                <div className="about-description">
                     <div className="title">
-                        <StyledHide>
+                        <div className="hide">
                             <motion.h2 variants={headlineAnim}>Hi, I'm Matt</motion.h2>
-                        </StyledHide>
-                        <StyledHide>
+                        </div>
+                        <div className="hide">
                             <motion.h2 variants={headlineAnim}>
                                 <span> Front-end</span> Developer
                             </motion.h2>
-                        </StyledHide>
+                        </div>
                     </div>
                     <motion.p variants={titleAnim}>This Portfolio was built with <span style={{ color: 'rgb(1, 225, 255)' }}>React</span></motion.p>
-                    <StyledBox>
+                    <div className="buttons">
                         <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim} style={{ marginRight: '.5rem' }}><Link to={'/projects'}>Projects</Link></motion.button>
                         <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim}><Link to={'/contact'}>
                             Contact me
                         </Link>
                         </motion.button>
-                        <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://github.com/Fittocode" className="brand-icon">
-                            <StyledBrandIcon variants={titleAnim}>
-                                <FontAwesomeIcon size="3x" icon={faGithub} />
-                            </StyledBrandIcon>
-                        </motion.a>
-                        <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://www.linkedin.com/in/matt-harrison-5697b363/" className="brand-icon">
-                            <StyledBrandIcon2 variants={titleAnim}>
-                                <FontAwesomeIcon className="brand-icon" size="3x" icon={faLinkedin} />
-                            </StyledBrandIcon2>
-                        </motion.a>
-                    </StyledBox>
-                </StyledDescription>
-                <StyledImage>
+                        <div className="icons">
+                            <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://github.com/Fittocode" className="brand-icon">
+                                <motion.div className="brand-icon" variants={titleAnim}>
+                                    <FontAwesomeIcon size="3x" icon={faGithub} />
+                                </motion.div>
+                            </motion.a>
+                            <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://www.linkedin.com/in/matt-harrison-5697b363/" className="brand-icon">
+                                <motion.div className="brand-icon" variants={titleAnim}>
+                                    <FontAwesomeIcon className="brand-icon" size="3x" icon={faLinkedin} />
+                                </motion.div>
+                            </motion.a>
+                        </div>
+                    </div>
+                </div>
+                <div className="about-image">
                     <motion.img variants={titleAnim} src={Matt2} alt="Matt Harrison portrait" />
-                </StyledImage>
-            </StyledAbout>
+                </div>
+            </motion.div>
         </motion.div>
     )
 }

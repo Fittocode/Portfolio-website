@@ -11,6 +11,12 @@ const GlobalStyle = createGlobalStyle`
           }
     }
 
+    html{
+        @media (max-width: 1200px) {
+            font-size: 80%;
+        }
+    }
+
     body{
         background: #272727;
         font-family: 'Inter', sans-serif;  

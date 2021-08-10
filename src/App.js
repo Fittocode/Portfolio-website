@@ -2,6 +2,7 @@ import { React, useState } from 'react'
 // Global Style
 import GlobalStyle from './components/GlobalStyle'
 import "./styles.css";
+import "./styles/app.scss"
 // import pages
 import AboutSection from './components/AboutSection'
 import ContactMe from './pages/ContactMe'
