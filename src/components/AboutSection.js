@@ -2,9 +2,6 @@ import React from 'react'
 import Matt2 from '../img/IMG_0940.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-// Styled
-import { StyledAbout, StyledDescription, StyledImage, StyledHide, StyledBox, StyledBrandIcon, StyledBrandIcon2, StyledIcons } from '../styles'
-
 
 // Framer Motion
 import { motion } from 'framer-motion'

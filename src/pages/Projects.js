@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import styled from 'styled-components'
 // Animations
 import { motion } from 'framer-motion'
 import { pageAnimation } from '../animation'
@@ -35,7 +34,7 @@ const Thumbnail = ({ id, i }) => (
             transition={transition}
         >
             <motion.p className="projects-title" variants={titleAnim}>A music player application, built with <span style={{ color: 'rgb(1, 225, 255)' }}>React</span> and styled with Sass</motion.p>
-            <iframe className="iframe" style={{ background: 'white' }} src="https://gallant-heyrovsky-e92bf2.netlify.app/"></iframe>
+            <iframe className="iframe" style={{ background: 'white' }} title="music app" src="https://gallant-heyrovsky-e92bf2.netlify.app/"></iframe>
         </motion.div>
     </motion.div>
 );
