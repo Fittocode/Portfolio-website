@@ -40,7 +40,7 @@ const AboutSection = () => {
                             </motion.h2>
                         </div>
                     </div>
-                    <motion.p variants={titleAnim}>This Portfolio was built with <span style={{ color: 'rgb(1, 225, 255)' }}>React</span></motion.p>
+                    <motion.p variants={titleAnim}>This Portfolio was built with <span style={{ color: '#61dafb' }}>React</span></motion.p>
                     <div className="buttons">
                         <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim} style={{ marginRight: '.5rem' }}><Link to={'/projects'}>Projects</Link></motion.button>
                         <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim}><Link to={'/contact'}>

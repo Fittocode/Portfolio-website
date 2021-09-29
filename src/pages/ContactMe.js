@@ -11,6 +11,8 @@ const ContactMe = () => {
             <h1>Contact Me</h1>
             <div>
                 <h3>MattHarrison92@gmail.com</h3>
+                <h3><a href="https://github.com/Fittocode">Github</a></h3>
+                <h3><a href="https://www.linkedin.com/in/matt-harrison-5697b363/">Linkedin</a></h3>
             </div>
         </StyledContact>
     )

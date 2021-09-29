@@ -1,55 +1,46 @@
 .projects-layout {
-    min-height: 100vh;
-    color: white;
-    overflow: hidden;
-    padding: 2rem 10rem;
-    h1 {
-        padding: 0rem 2rem;
-    }
+  min-height: 100vh;
+  color: white;
+  overflow: hidden;
+  padding: 2rem 10rem;
+  h1 {
+    padding: 0rem 2rem;
+  }
 }
 
 .projects-title {
-    padding: 0rem 0rem 1rem;
-    color: white;
+  padding: 0rem 0rem 1rem;
+  color: white;
 }
 
 .iframe {
-    height: 800px;
-    width: 1400px;
+  height: 800px;
+  width: 1200px;
 }
 
 @media screen and (max-width: 1600px) {
-    .iframe {
-        width: 1200px;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .iframe {
-        width: 1000px;
-    }
+  .iframe {
+    width: 1000px;
+  }
 }
 
 @media screen and (max-width: 1250px) {
-    .projects-layout {
-        padding: 2rem 5rem;
-    }
-    .iframe {
-        width: 900px;
-    }
+  .iframe {
+    width: 800px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-    .iframe {
-        width: 100%;
-    }
+  .iframe {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 500px) {
-    .projects-layout {
-        padding: 7rem 1rem;
-    }
-    .iframe {
-        height: 600px;
-    }
+@media screen and (max-width: 750px) {
+  .projects-layout {
+    padding: 7rem 1rem;
+  }
+  .iframe {
+    height: 700px;
+  }
 }
