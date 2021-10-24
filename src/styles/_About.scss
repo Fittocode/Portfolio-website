@@ -1,90 +1,90 @@
 .about-layout {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  color: white;
 }
 
 .about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  h2 {
+    font-weight: lighter;
+  }
+  .buttons {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 45%;
-    h2{
-        font-weight: lighter;
+    order: 1;
+    .icons {
+      display: flex;
+      @media screen and (max-width: 760px) {
+        order: 2;
+      }
     }
-    .buttons {
-        display: flex;
-        order: 1;
-        .icons {
-            display: flex;
-            @media screen and (max-width: 760px) {
-                order: 2;
-            }
-        }
-    }
+  }
 }
 
 .about-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 45%;
-    img{
-        width: 80%;
-        border-radius: 50%;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 45%;
+  img {
+    width: 80%;
+    border-radius: 50%;
+  }
 }
 
 .hide {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .brand-icon {
-    display: flex;
-    align-items: center;
-    margin-left: .3rem;
-    transition: all 0.2s ease;
-    color: white;
-    &:hover{
-        color: #00fdd7;
-        cursor: pointer;
-    }
+  display: flex;
+  align-items: center;
+  margin-left: 0.3rem;
+  transition: all 0.2s ease;
+  color: white;
+  &:hover {
+    color: #00fdd7;
+    cursor: pointer;
+  }
 }
 
-  @media screen and (max-width: 950px) {
-    .about-layout{
-      flex-direction: column-reverse;
-      justify-content: center;
-      padding: 1rem 1.5rem 1rem 1.5rem;
+@media screen and (max-width: 950px) {
+  .about-layout {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+  .about-image {
+    width: 80%;
+    img {
+      width: 60%;
     }
-    .about-image {
-        width: 80%;
-        img {
-            width: 60%;
-        }
-        margin-bottom: 2rem;
-    }
-    .about-description {
-        text-align: center;
-        width: 100%;
-        h2 {
-            font-size: 3.5rem;
-        }
-    }
-    .buttons {
-        justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .about-description {
+    text-align: center;
+    width: 100%;
+    h2 {
+      font-size: 3.5rem;
     }
   }
+  .buttons {
+    justify-content: center;
+  }
+}
 
-  @media screen and (max-width: 450px) {
-    .about-image {
-        img {
-            width: 80%;
-        }
+@media screen and (max-width: 450px) {
+  .about-image {
+    img {
+      width: 80%;
     }
   }
+}
