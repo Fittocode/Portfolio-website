@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 // Animations
 import { motion } from 'framer-motion'
 import { pageAnimation } from '../animation'
@@ -19,10 +18,6 @@ const thumbnailVariants = {
 
 const frameVariants = {
     hover: { scale: 1.01 }
-};
-
-const imageVariants = {
-    hover: { scale: .98 }
 };
 
 const Thumbnail = ({ id, i }) => (
