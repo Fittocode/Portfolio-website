@@ -4,8 +4,16 @@ import styled from 'styled-components'
 // Animations
 import { motion } from 'framer-motion'
 import { pageAnimation } from '../animation'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Resume = () => {
+
+    const titleAnim = {
+        hidden: { opacity: 0 },
+        show: { opacity: 1, transition: { duration: 1 } }
+    }
+
     return (
         <StyledResume exit="exit" variants={pageAnimation} initial='hidden' animate="enter">
             <div>
@@ -24,8 +32,18 @@ const Resume = () => {
                         </div>
                         <hr />
                         <div className="links">
-                            <p><a href="https://github.com/Fittocode">Github</a></p>
-                            <p><a href="https://www.linkedin.com/in/matt-harrison-5697b363/">LinkedIn</a></p>
+                            <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://github.com/Fittocode" >
+                                <motion.div className="brand-icon">
+                                    <FontAwesomeIcon size="3x" icon={faGithub} />
+                                </motion.div>
+                            </motion.a>
+                        </div>
+                        <div className="links">
+                            <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://www.linkedin.com/in/matt-harrison-5697b363/">
+                                <motion.div className="brand-icon">
+                                    <FontAwesomeIcon size="3x" icon={faLinkedin} />
+                                </motion.div>
+                            </motion.a>
                         </div>
                     </div>
                 </div>
@@ -35,7 +53,7 @@ const Resume = () => {
                             <h3>Professional Experience</h3>
                             <hr />
                             <h4>WordPress Developer, UX/UI Designer</h4>
-                            <h5>Tape, LLC | June 2020 - Present | Arlington, Va —> Remote</h5>
+                            <h5>Tape, LLC | June 2020 - Present | Arlington, VA</h5>
                             <p>Designed and built a website with WordPress for a government contractor, which I continue to monitor and update: <a href="https://www.tape-llc.com" style={{color: '#0054c2'}}>tape-llc.com</a></p> 
                             <h4>Web Development Bootcamp, Full-Time</h4>
                             <h5>Ironhack | Jan 2019 - Mar 2019 | Berlin, Germany</h5>
@@ -89,10 +107,12 @@ const Resume = () => {
 }
 
 const StyledResume = styled(motion.div)`
+    display: flex;
+    justify-content: center;
     min-height: 100vh;
     color: white;
     overflow: hidden;
-    padding: 2rem 10rem;
+    padding: 2rem;
 `;
 
 export default Resume

@@ -49,7 +49,9 @@
 }
 
 .links {
-  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
 }
 
 .resume-text-format {
