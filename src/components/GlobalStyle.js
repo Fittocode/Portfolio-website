@@ -58,7 +58,6 @@ const GlobalStyle = createGlobalStyle`
     }
     h4 {
         font-weight: bold;
-        font-size: 2rem;
     }
     a {
         font-size: 1.1rem;
@@ -69,7 +68,7 @@ const GlobalStyle = createGlobalStyle`
     }
     p {
         padding: 3rem 0rem;
-        color: #dbdbdb;
+        color: black;
         font-size: 1.4rem;
         line-height: 150%;
     }

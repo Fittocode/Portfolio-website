@@ -22,7 +22,7 @@ export const Nav = () => {
     )
 }
 
-const itemIds = [{ page: 'About Me', link: '/' }, { page: 'Projects', link: '/projects' }, { page: 'Contact Me', link: '/contact' }]
+const itemIds = [{ page: 'About', link: '/' }, { page: 'Projects', link: '/projects' }, { page: 'Resume', link: '/resume' }]
 
 
 export default Nav

@@ -7,6 +7,7 @@ import "./styles/app.scss"
 import AboutSection from './components/AboutSection'
 import ContactMe from './pages/ContactMe'
 import Projects from './pages/Projects'
+import Resume from './pages/Resume'
 
 // Import navbar
 import { Navbar } from './components/nav/Navbar';
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/projects" exact>
             <Projects />
+          </Route>
+          <Route path="/resume" exact>
+            <Resume />
           </Route>
           <Route path="/contact">
             <ContactMe />

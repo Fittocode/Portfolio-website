@@ -40,12 +40,17 @@ const AboutSection = () => {
                             </motion.h2>
                         </div>
                     </div>
-                    <motion.p variants={titleAnim}>This Portfolio was built with <span style={{ color: '#61dafb' }}>React</span></motion.p>
+                    <motion.p variants={titleAnim} style={{color: 'white'}}>This Portfolio was built with <span style={{ color: '#61dafb' }}>React</span></motion.p>
                     <div className="buttons">
-                        <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim} style={{ marginRight: '.5rem' }}><Link to={'/projects'}>Projects</Link></motion.button>
-                        <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim}><Link to={'/contact'}>
-                            Contact me
-                        </Link>
+                        <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim} style={{ marginRight: '.5rem' }}>
+                            <Link to={'/projects'}>
+                                Projects
+                            </Link>
+                        </motion.button>
+                        <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim} style={{ marginRight: '.5rem' }}>
+                            <Link to={'/resume'}>
+                                Resume
+                            </Link>
                         </motion.button>
                         <div className="icons">
                             <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://github.com/Fittocode" className="brand-icon">

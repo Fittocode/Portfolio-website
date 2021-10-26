@@ -1,0 +1,100 @@
+.resume-box {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-top: 0rem;
+}
+
+.resume-bg-black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.resume-black-text {
+  text-align: center;
+  font-family: 'Lato', serif;
+
+  line-height: 1;
+
+  h3 {
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: #00fdd7;
+  }
+
+  h4 {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  p {
+    color: white;
+    padding: 0rem 1rem 1rem;
+  }
+
+  hr {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+.resume-contact {
+  padding-top: 1rem;
+}
+
+.resume-bg-white {
+  background-color: white;
+}
+
+.links {
+  padding-top: 1rem;
+}
+
+.resume-text-format {
+  padding-left: 1rem;
+  padding-top: 2rem;
+  font-family: 'Lato', sans-serif;
+
+  h3,
+  h4,
+  h5 {
+    color: black;
+  }
+
+  hr {
+    width: 95%;
+  }
+
+  h3 {
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  h4 {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  p,
+  h5 {
+    padding: 0.3rem 1.3rem 0.3rem 0rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 0.8rem;
+  }
+}
+
+.resume-text-titles {
+  color: black;
+}
+
+.resume-sections {
+  padding-bottom: 0.5rem;
+}
