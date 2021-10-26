@@ -9,11 +9,6 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Resume = () => {
 
-    const titleAnim = {
-        hidden: { opacity: 0 },
-        show: { opacity: 1, transition: { duration: 1 } }
-    }
-
     return (
         <StyledResume exit="exit" variants={pageAnimation} initial='hidden' animate="enter">
             <div>
