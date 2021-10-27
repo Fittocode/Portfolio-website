@@ -23,7 +23,7 @@ const AboutSection = () => {
     }
     const container = {
         hidden: { x: 100, opacity: 0 },
-        show: { x: 0, opacity: 1, transition: { duration: .5, ease: "easeOut", staggerChildren: .20, when: 'beforeChildren' } }
+        show: { x: 0, opacity: 1, transition: { duration: .3, ease: "easeOut", staggerChildren: .20, when: 'beforeChildren' } }
     }
 
     return (

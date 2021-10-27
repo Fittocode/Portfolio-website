@@ -1,7 +1,7 @@
 export const pageAnimation = {
     hidden: {
         opacity: 0,
-        y: 300,
+        y: 0,
     },
     enter: {
         opacity: 1,
@@ -14,8 +14,9 @@ export const pageAnimation = {
     },
     exit: {
         opacity: 0,
-        y: 300,
+        y: 0,
         transition: {
+            delay: .7,
             duration: .8,
         },
     }

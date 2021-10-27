@@ -2,6 +2,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom'
 
+
 const variants = {
     open: {
         y: 0,
@@ -19,18 +20,16 @@ const variants = {
     }
 };
 
-const colors = ["#23d997", "#ffa9ff", "#79c7fa"];
-
-export const MenuItem = ({ j, i, link }) => {
-    const style = { border: `2px solid ${colors[j]}` };
+export const MenuItem = ({ i, link, toggle }) => {
     return (
         <motion.li
             variants={variants}
             whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
+            whileTap={{ scale: 0.95}}
+            onClick={toggle}
         >
-            <div className="icon-placeholder" style={style} />
-            <Link to={link} className="text-placeholder"><div style={style}>{i}</div></Link>
+            <div className="icon-placeholder" />
+            <Link to={link} className="text-placeholder"><div>{i}</div></Link>
         </motion.li>
     );
 };

@@ -1,7 +1,7 @@
 .resume-box {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 70%;
   margin-top: 0rem;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .resume-text-format {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   padding-top: 2rem;
   font-family: 'Lato', sans-serif;
 
@@ -99,4 +99,71 @@
 
 .resume-sections {
   padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .resume-box {
+    width: 90%;
+  }
+  .resume-text-format {
+    p {
+      font-size: 1.2rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 1.3rem;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .resume-box {
+    padding-top: 4rem;
+    flex-direction: column;
+    width: 90%;
+  }
+  .resume-bg-black {
+    padding-top: 1.5rem;
+    height: 230px;
+
+    h3 {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .resume-black-text {
+    text-align: center;
+    line-height: 0.5;
+    hr {
+      display: none;
+    }
+  }
+
+  .resume-contact {
+    padding-top: 0rem;
+    p {
+      padding: 0.2rem;
+    }
+  }
+
+  .contact-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .links {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .resume-box {
+    width: 100%;
+  }
 }

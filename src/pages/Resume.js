@@ -19,26 +19,28 @@ const Resume = () => {
                     <div className="resume-black-text">
                         <h2>Matt Harrison</h2>
                         <h3>Software Developer</h3>
-                        <hr />
-                        <div className="resume-contact">
-                            <p>Contact</p>
-                            <p>MattHarrison92@gmail.com</p>
-                            <p>Huntsville, AL, USA</p>
-                        </div>
-                        <hr />
-                        <div className="links">
-                            <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://github.com/Fittocode" >
-                                <motion.div className="brand-icon">
-                                    <FontAwesomeIcon size="3x" icon={faGithub} />
-                                </motion.div>
-                            </motion.a>
-                        </div>
-                        <div className="links">
-                            <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://www.linkedin.com/in/matt-harrison-5697b363/">
-                                <motion.div className="brand-icon">
-                                    <FontAwesomeIcon size="3x" icon={faLinkedin} />
-                                </motion.div>
-                            </motion.a>
+                        
+                            <hr />
+                            <div className="resume-contact">
+                                <p>MattHarrison92@gmail.com</p>
+                                <p>Huntsville, AL, USA</p>
+                            </div>
+                            <hr />
+                            <div className="contact-box">
+                                <div className="links">
+                                    <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://github.com/Fittocode" >
+                                        <motion.div className="brand-icon">
+                                            <FontAwesomeIcon size="3x" icon={faGithub} />
+                                        </motion.div>
+                                    </motion.a>
+                                </div>
+                                <div className="links">
+                                    <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://www.linkedin.com/in/matt-harrison-5697b363/">
+                                        <motion.div className="brand-icon">
+                                            <FontAwesomeIcon size="3x" icon={faLinkedin} />
+                                        </motion.div>
+                                    </motion.a>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -85,7 +87,7 @@ const Resume = () => {
                             <h5>Environment: React, React Router, Sass</h5>
                             <p>This music player was also built with React, styled with sass, and deployed on Netlify.</p>
                         </div>
-                        <div className="resume-sections">
+                        <div className="resume-sections" style={{paddingBottom: '1.5rem'}}>
                             <h3>Education</h3>
                             <hr />
                             <h4>Bachelor of Arts, English</h4>
@@ -107,7 +109,7 @@ const StyledResume = styled(motion.div)`
     min-height: 100vh;
     color: white;
     overflow: hidden;
-    padding: 2rem;
+    padding: 2rem 0 2rem 0rem;
 `;
 
 export default Resume

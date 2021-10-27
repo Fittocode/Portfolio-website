@@ -37,7 +37,6 @@ const Thumbnail = ({ id, i }) => (
 export const Projects = () => {
     return (
         <motion.div className="projects-layout" exit="exit" variants={pageAnimation} initial='hidden' animate="enter">
-            <h1>Projects</h1>
             <div className="gallery">
                 <motion.div
                     className="thumbnails"
