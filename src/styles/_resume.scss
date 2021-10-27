@@ -20,7 +20,7 @@
 
   h3 {
     font-size: 2.5rem;
-    padding: 2rem;
+    padding: 1rem 0rem;
     color: #00fdd7;
   }
 
@@ -31,13 +31,17 @@
   }
   p {
     color: white;
-    padding: 0rem 1rem 1rem;
+    padding: 0rem 1rem 0rem;
   }
 
   hr {
     width: 40%;
     margin: auto;
   }
+}
+
+.resume-address {
+  padding: 1rem 0rem;
 }
 
 .resume-contact {
@@ -123,38 +127,49 @@
 
 @media screen and (max-width: 750px) {
   .resume-box {
-    padding-top: 4rem;
+    padding-top: 0rem;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   }
   .resume-bg-black {
-    padding-top: 1.5rem;
-    height: 230px;
+    padding-top: 2rem;
+    height: 250px;
 
     h3 {
-      padding-bottom: 1rem;
+      padding: 2rem 0 1rem;
     }
   }
 
   .resume-black-text {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     line-height: 0.5;
     hr {
       display: none;
     }
   }
 
+  .resume-address {
+    padding: 0rem;
+  }
+
+  // .resume-header {
+  //   display: flex;
+  //   justify-content: center;
+  //   text-align: left;
+  // }
+
+  .contact-box {
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+
   .resume-contact {
+    display: flex;
     padding-top: 0rem;
     p {
       padding: 0.2rem;
     }
-  }
-
-  .contact-box {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1rem;
   }
 
   .links {

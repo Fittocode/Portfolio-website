@@ -17,16 +17,16 @@ const Resume = () => {
             <div className="resume-box">
                 <div className="resume-bg-black">
                     <div className="resume-black-text">
-                        <h2>Matt Harrison</h2>
-                        <h3>Software Developer</h3>
-                        
-                            <hr />
+                        <div className="contact-box">
+                                <h2>Matt Harrison</h2>
+                                <h3>Software Developer</h3>
                             <div className="resume-contact">
-                                <p>MattHarrison92@gmail.com</p>
-                                <p>Huntsville, AL, USA</p>
-                            </div>
-                            <hr />
-                            <div className="contact-box">
+                                    <hr />
+                                <div className="resume-address">
+                                    <p>MattHarrison92@gmail.com</p>
+                                    <p>Huntsville, AL, USA</p>
+                                </div>
+                                    <hr />
                                 <div className="links">
                                     <motion.a whileHover={{ y: -10, transition: { duration: .3 } }} href="https://github.com/Fittocode" >
                                         <motion.div className="brand-icon">
@@ -41,6 +41,7 @@ const Resume = () => {
                                         </motion.div>
                                     </motion.a>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -109,7 +110,7 @@ const StyledResume = styled(motion.div)`
     min-height: 100vh;
     color: white;
     overflow: hidden;
-    padding: 2rem 0 2rem 0rem;
+    padding: 0rem 0 2rem 0rem;
 `;
 
 export default Resume
