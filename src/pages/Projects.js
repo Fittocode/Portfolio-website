@@ -1,4 +1,6 @@
 import React from 'react'
+import JournalGif from '../img/Journal-app.gif'
+import MusicGif from '../img/music-app.gif'
 // Animations
 import { motion } from 'framer-motion'
 import { pageAnimation } from '../animation'
@@ -28,8 +30,9 @@ const Thumbnail = ({ id, i }) => (
             variants={frameVariants}
             transition={transition}
         >
-            <motion.p className="projects-title" variants={titleAnim}>A music player application, built with <span style={{ color: 'rgb(1, 225, 255)' }}>React</span> and styled with Sass</motion.p>
-            <iframe className="iframe" style={{ background: 'white' }} title="Music App" src="https://gallant-heyrovsky-e92bf2.netlify.app/"></iframe>
+            <motion.p className="projects-title" variants={titleAnim}>A Journal App application, built with <span style={{ color: 'rgb(1, 225, 255)' }}>React</span> and styled with Sass.</motion.p>
+            {/* <iframe className="iframe" style={{ background: 'white' }} title="Music App" src="https://gallant-heyrovsky-e92bf2.netlify.app/"></iframe> */}
+            <img src={JournalGif} alt="This is an animated gif image"/>
         </motion.div>
     </motion.div>
 );
