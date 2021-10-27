@@ -153,12 +153,6 @@
     padding: 0rem;
   }
 
-  // .resume-header {
-  //   display: flex;
-  //   justify-content: center;
-  //   text-align: left;
-  // }
-
   .contact-box {
     text-align: left;
     padding-bottom: 1rem;
@@ -180,5 +174,11 @@
 @media screen and (max-width: 460px) {
   .resume-box {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .resume-bg-black {
+    padding-top: 6rem;
   }
 }
