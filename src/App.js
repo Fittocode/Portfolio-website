@@ -5,7 +5,6 @@ import "./styles.css";
 import "./styles/app.scss"
 // import pages
 import AboutSection from './components/AboutSection'
-import ContactMe from './pages/ContactMe'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 
@@ -25,22 +24,11 @@ function App() {
       <GlobalStyle navStatus={navStatus} />
       <Navbar navStatus={navStatus} setNavStatus={setNavStatus} />
       <AnimatePresence exitBeforeEnter>
-        <BrowserRouter>
         <Switch location={location} key={location.pathname}>
-          <Route path="/" exact>
-            <AboutSection />
-          </Route>
-          <Route path="/projects" exact>
-            <Projects />
-          </Route>
-          <Route path="/resume" exact>
-            <Resume />
-          </Route>
-          <Route path="/contact">
-            <ContactMe />
-          </Route>
+          <Route exact path="/" component={AboutSection} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/resume" component={Resume} />
         </Switch>
-        </BrowserRouter>
       </AnimatePresence>
     </div>
   );
