@@ -11,7 +11,7 @@ import Resume from './pages/Resume'
 // Import navbar
 import { Navbar } from './components/nav/Navbar';
 // Router
-import { BrowserRouter, Switch, Route, useLocation } from 'react-router-dom'
+import { Switch, Route, useLocation } from 'react-router-dom'
 // import animate
 import { AnimatePresence } from 'framer-motion'
 
