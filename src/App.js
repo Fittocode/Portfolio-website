@@ -12,7 +12,7 @@ import Resume from './pages/Resume'
 // Import navbar
 import { Navbar } from './components/nav/Navbar';
 // Router
-import { Switch, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Switch, Route, useLocation } from 'react-router-dom'
 // import animate
 import { AnimatePresence } from 'framer-motion'
 
@@ -25,6 +25,7 @@ function App() {
       <GlobalStyle navStatus={navStatus} />
       <Navbar navStatus={navStatus} setNavStatus={setNavStatus} />
       <AnimatePresence exitBeforeEnter>
+        <BrowserRouter>
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
             <AboutSection />
@@ -39,6 +40,7 @@ function App() {
             <ContactMe />
           </Route>
         </Switch>
+        </BrowserRouter>
       </AnimatePresence>
     </div>
   );
