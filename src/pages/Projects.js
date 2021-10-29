@@ -18,7 +18,7 @@ const frameVariants = {
 
 const Thumbnail = () => (
     <motion.div className="frame" variants={thumbnailVariants}>
-        <motion.p className="projects-title">A Journal App application, built with <span style={{ color: 'rgb(1, 225, 255)' }}>React</span> and styled with Sass.</motion.p>
+        <motion.p className="projects-title">A Twitter-like Journal application, built with React and styled with Sass. Still being developed. Currently only client-side. </motion.p>
         <a href="https://zealous-kepler-ab4529.netlify.app/" target="tab"><div className="project-demo">Demo</div></a>
         <motion.div
             whileHover="hover"
