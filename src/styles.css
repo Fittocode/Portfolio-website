@@ -100,21 +100,21 @@ li {
 .thumbnails {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .thumbnail {
   flex: 1 0 33%;
-  margin: 10px;
+  margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-.frame {
+/* .frame {
   overflow: hidden;
-}
+} */
 
 .thumbnail img {
   width: 100%;

@@ -33,11 +33,15 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 880px) {
   .projects-layout {
     padding: 7rem 1rem;
   }
   .iframe {
     height: 700px;
+  }
+
+  .thumbnail {
+    width: 100%;
   }
 }
