@@ -5,6 +5,11 @@
   padding: 2rem 10rem;
 }
 
+.project-demo {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .projects-title {
   padding: 0rem 0rem 1rem;
   color: white;
@@ -43,5 +48,9 @@
 
   .thumbnail {
     width: 100%;
+  }
+
+  .project-demo {
+    font-size: 1.5rem;
   }
 }

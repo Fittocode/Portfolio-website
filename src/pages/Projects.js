@@ -16,9 +16,10 @@ const frameVariants = {
     hover: { scale: 1.01, opacity: 1, boxShadow: '5px 5px 15px -5px rgb(255, 255, 255, .7)'}
 };
 
-const Thumbnail = ({ id, i }) => (
+const Thumbnail = () => (
     <motion.div className="frame" variants={thumbnailVariants}>
         <motion.p className="projects-title">A Journal App application, built with <span style={{ color: 'rgb(1, 225, 255)' }}>React</span> and styled with Sass.</motion.p>
+        <a href="https://zealous-kepler-ab4529.netlify.app/" target="tab"><div className="project-demo">Demo</div></a>
         <motion.div
             whileHover="hover"
             variants={frameVariants}

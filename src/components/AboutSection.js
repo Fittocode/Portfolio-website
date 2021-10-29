@@ -42,11 +42,11 @@ const AboutSection = () => {
                     </div>
                     <motion.p variants={titleAnim} style={{color: 'white'}}>This Portfolio was built with <span style={{ color: '#61dafb' }}>React</span></motion.p>
                     <div className="buttons">
-                        <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim} style={{ marginRight: '.5rem' }}>
                             <Link to={'/projects'}>
+                        <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim} style={{ marginRight: '.5rem' }}>
                                 Projects
-                            </Link>
                         </motion.button>
+                            </Link>
                             <Link to={'/resume'}>
                         <motion.button whileHover={{ y: -10, transition: { duration: .02 } }} variants={titleAnim} style={{ marginRight: '.5rem' }}>
                                 Resume
