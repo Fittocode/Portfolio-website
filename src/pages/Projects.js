@@ -19,26 +19,24 @@ const frameVariants = {
 
 const Thumbnail = () => (
     <motion.div className="frame" variants={thumbnailVariants}>
-        <div className="project-items">
-            <motion.p className="projects-title">A Twitter-like Journal application, built with React and styled with Sass. Still being developed. Currently only client-side. </motion.p>
-            <a href="https://zealous-kepler-ab4529.netlify.app/" target="tab"><div className="project-demo">Demo</div></a>
-            <motion.div
-                whileHover="hover"
-                variants={frameVariants}
-                transition={transition}
-            >
-                <a href="https://zealous-kepler-ab4529.netlify.app/" target="tab"><img className="thumbnail" src={JournalGif} alt="This is an animated gif of my Journal App"/></a>
-            </motion.div>
-        </div>
         <div className="projects-items">
             <motion.p className="projects-title">A fully functioning Music Player app, built with React and styled with Sass. </motion.p>
-            <a href="https://gallant-heyrovsky-e92bf2.netlify.app/" target="tab"><div className="project-demo">Demo</div></a>
             <motion.div
                 whileHover="hover"
                 variants={frameVariants}
                 transition={transition}
             >
                 <a href="https://gallant-heyrovsky-e92bf2.netlify.app/" target="tab"><img className="thumbnail" src={musicplayerGif} alt="This is an animated gif of my Journal App"/></a>
+            </motion.div>
+        </div>
+        <div className="project-items">
+            <motion.p className="projects-title">A Twitter-like Journal application, built with React and styled with Sass. Still being developed. Currently only client-side. </motion.p>
+            <motion.div
+                whileHover="hover"
+                variants={frameVariants}
+                transition={transition}
+            >
+                <a href="https://zealous-kepler-ab4529.netlify.app/" target="tab"><img className="thumbnail" src={JournalGif} alt="This is an animated gif of my Journal App"/></a>
             </motion.div>
         </div>
     </motion.div>
