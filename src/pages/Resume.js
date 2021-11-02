@@ -52,7 +52,7 @@ const Resume = () => {
                             <hr />
                             <h4>WordPress Developer, UX/UI Designer</h4>
                             <h5>Tape, LLC | June 2020 - Present | Arlington, VA</h5>
-                            <p>Designed and built a website with WordPress for a government contractor, which I continue to monitor and update: <a href="https://www.tape-llc.com" style={{color: '#0054c2'}}>tape-llc.com</a></p> 
+                            <p>Designed and built a website with WordPress for a government contractor, which I continue to monitor and update: <a className="link-color" href="https://www.tape-llc.com">tape-llc.com</a></p> 
                             <h4>Web Development Bootcamp, Full-Time</h4>
                             <h5>Ironhack | Jan 2019 - Mar 2019 | Berlin, Germany</h5>
                             <p>Full-Stack JavaScript Web Dev Course with focus on MERN stack</p>
@@ -81,10 +81,10 @@ const Resume = () => {
                             <h4>Portfolio Website</h4>
                             <h5>Environment: React, Framer Motion, Sass, React Spring, React Router</h5>
                             <p>My portfolio website, built with React, styled with Sass, and deployed on Netlify.</p>
-                            <h4>Journal App</h4>
+                            <h4><a className="link-color" href="https://zealous-kepler-ab4529.netlify.app">Journal App</a></h4>
                             <h5>Environment: React, Express, MongoDB Atlas, Sass</h5>
                             <p>My main passion project at the moment, this twitter-style journal app focuses on algorithmic search functionality to filter through journal topics and their sub-entries. Work in progress. </p>
-                            <h4>Music Player</h4>
+                            <h4><a className="link-color" href="https://gallant-heyrovsky-e92bf2.netlify.app/">Music Player</a></h4>
                             <h5>Environment: React, React Router, Sass</h5>
                             <p>This music player was also built with React, styled with sass, and deployed on Netlify.</p>
                         </div>
