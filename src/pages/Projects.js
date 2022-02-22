@@ -35,7 +35,7 @@ const Thumbnail = () => (
         transition={transition}
       >
         <a
-          href='https://mattharrisondev-social-app.herokuapp.com/login'
+          href='https://mattharrisondev-social-app.herokuapp.com/'
           target='tab'
         >
           <img
