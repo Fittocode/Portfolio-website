@@ -41,7 +41,7 @@ const Thumbnail = () => (
           <img
             className='social-pic'
             src={SocialMediaApp}
-            alt='This is an image of my Social Media App'
+            alt='Social Media App'
           />
         </a>
       </motion.div>
