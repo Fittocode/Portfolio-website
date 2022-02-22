@@ -93,30 +93,34 @@ const Resume = () => {
               <h4>Libraries/Frameworks</h4>
               <p>
                 React, Node.js, Express, Sass, Framer Motion, React-Spring,
-                Gatsby.js, Styled Components, Passport, Canvas, Babel, Webpack,
-                Bootstrap
+                Gatsby.js, Styled Components, Canvas, Babel, Webpack, Bootstrap
               </p>
               <h4>Versioning/Deployment, CMS</h4>
               <p>
                 Docker, Github, Netlify, Heroku, WordPress, Squarespace,
                 SiteGround
               </p>
-              <h4>Databases/API</h4>
-              <p>MongoDB (+ Atlas), Mongoose, Postman</p>
+              <h4>Databases/API, Authentication</h4>
+              <p>MongoDB (+ Atlas), Mongoose, Postman, Passport</p>
               <h4>Concepts</h4>
               <p>DOM, CRUD, AGILE, REST, Core Web Vitals</p>
             </div>
             <div className='resume-sections'>
               <h3>Projects</h3>
               <hr />
-              <h4>Portfolio Website</h4>
-              <h5>
-                Environment: React, Framer Motion, Sass, React Spring, React
-                Router
-              </h5>
+              <h4>
+                <a
+                  className='link-color'
+                  href='https://mattharrisondev-social-app.herokuapp.com/'
+                >
+                  Facebook Clone
+                </a>
+              </h4>
+              <h5>Environment: Express, Node, MongoDB Atlas, Passport, Sass</h5>
               <p>
-                My portfolio website, built with React, styled with Sass, and
-                deployed on Netlify.
+                A full stack, social media node.js application connected to
+                MongoDB Atlas, authenticated with Passport, and deployed to
+                Heroku via Docker
               </p>
               <h4>
                 <a
